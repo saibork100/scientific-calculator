@@ -213,3 +213,19 @@ class Calc():
         self.current = math.sinh(math.radians(float(txtDisplay.get())))
         # Call the display method with the value of the current attribute
         self.display(self.current)  
+
+    def log(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the natural logarithm of the value displayed in the txtDisplay widget
+        self.current = math.log(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def exp(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the exponential of the value displayed in the txtDisplay widget
+        self.current = math.exp(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
