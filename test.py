@@ -52,22 +52,60 @@ class Calc():
         # Display the current value on the calculator's display
         self.display(self.current)
 
-def sum_of_total(self):
-    # Set the result attribute to True
-    self.result=True
-    # Convert the current attribute
-    self.current=float(self.current)
+    def sum_of_total(self):
+        # Set the result attribute to True
+        self.result=True
+        # Convert the current attribute
+        self.current=float(self.current)
 
-    # Check if the check_sum attribute is True
-    if self.check_sum==True:
-        # If it is, call the valid_function method
-        self.valid_function()
-    else:
-        # Otherwise, set the total attribute to the value of the txtDisplay widget, converted to a float
-        self.total=float(txtDisplay.get())
+        # Check if the check_sum attribute is True
+        if self.check_sum==True:
+            # If it is, call the valid_function method
+            self.valid_function()
+        else:
+            # Otherwise, set the total attribute to the value of the txtDisplay widget, converted to a float
+            self.total=float(txtDisplay.get())
 
-def display(self, value):
-    # Delete any existing existing text in the txtDisplay widget
-    txtDisplay.delete(0, END)
-    # Insert the given value in the  txtDisplay widget
-    txtDisplay.insert(0, value)
+    def display(self, value):
+        # Delete any existing existing text in the txtDisplay widget
+        txtDisplay.delete(0, END)
+        # Insert the given value in the  txtDisplay widget
+        txtDisplay.insert(0, value)
+
+    def valid_function(self):
+    # Check the value of the op attribute and perform the corresponding operation on the total and current attributes
+        if self.op == "add":
+            if self.op == "add":
+                self.total += self.current
+            if  self.op=="sub":
+                self.total -= self.current
+            elif self.op=="multi":
+                self.total *= self.current
+            elif self.op=="divide":
+                self.total /= self.current
+            elif self.op == "mod":
+                self.total %= self.current
+            self.input_value=True
+            self.check_sum=False
+            self.display(self.total)
+
+    def operation(self, op):
+        # Convert the current attribute to a float
+        self.current = float(self.current)
+   
+        # If the check_sum attribute is True, call the valid_function method
+        if self.check_sum:
+            self.valid_function()
+        
+        
+        # If the check_sum attribute is True, call the valid_function method
+        elif not self.result:
+            self.total=self.current
+            self.input_value=True
+        
+        # Set the check_sum attribute to True
+        self.check_sum=True
+        # Set the op attribute to the given value
+        self.op=op
+        # Set the result attribute to False
+        self.result=False 
