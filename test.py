@@ -149,3 +149,21 @@ class Calc():
         self.current = math.e
         # Call the display method with the value of the current attribute
         self.display(self.current)
+
+    def mathPM(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the negative value of the text displayed in the txtDisplay widget
+        self.current = -(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def squared(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the square root of the text displayed in the txtDisplay widge
+        self.current = math.sqrt(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    
