@@ -66,6 +66,7 @@ class Calc():
             # Otherwise, set the total attribute to the value of the txtDisplay widget, converted to a float
             self.total=float(txtDisplay.get())
 
+<<<<<<< HEAD
     def display(self, value):
         # Delete any existing existing text in the txtDisplay widget
         txtDisplay.delete(0, END)
@@ -109,3 +110,10 @@ class Calc():
         self.op=op
         # Set the result attribute to False
         self.result=False 
+=======
+def display(self, value):
+    # Delete any existing existing text in the txtDisplay widget
+    txtDisplay.delete(0, END)
+    # Insert the given value in the  txtDisplay widget
+    txtDisplay.insert(0, value)
+>>>>>>> df8a948683a5402e19dadd6505451a90f0ffc5f8
