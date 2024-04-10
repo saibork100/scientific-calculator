@@ -51,4 +51,23 @@ class Calc():
             self.current = firstnum+secondnum
         # Display the current value on the calculator's display
         self.display(self.current)
-        
+
+def sum_of_total(self):
+    # Set the result attribute to True
+    self.result=True
+    # Convert the current attribute
+    self.current=float(self.current)
+
+    # Check if the check_sum attribute is True
+    if self.check_sum==True:
+        # If it is, call the valid_function method
+        self.valid_function()
+    else:
+        # Otherwise, set the total attribute to the value of the txtDisplay widget, converted to a float
+        self.total=float(txtDisplay.get())
+
+def display(self, value):
+    # Delete any existing existing text in the txtDisplay widget
+    txtDisplay.delete(0, END)
+    # Insert the given value in the  txtDisplay widget
+    txtDisplay.insert(0, value)
