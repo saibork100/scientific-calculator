@@ -110,18 +110,42 @@ class Calc():
         # Set the result attribute to False
         self.result=False 
 
-def Clear_Entry(self):
-    # Set the result attribute to False
-    self.ressult = False
-    # Set the current attribute to "0"
-    self.current ="0"
-    # Call the display method with an argument of 0
-    self.display(0)
-    # Set the input_value attribute to True
-    self.input_value = True
+    def Clear_Entry(self):
+        # Set the result attribute to False
+        self.ressult = False
+        # Set the current attribute to "0"
+        self.current ="0"
+        # Call the display method with an argument of 0
+        self.display(0)
+        # Set the input_value attribute to True
+        self.input_value = True
 
-def All_claer_Entry(self):
-    # Call the Clear_Entry method
-    self.clear_Entry()
-    # Set the total attribute to 0
-    self.total=0
+    def All_claer_Entry(self):
+        # Call the Clear_Entry method
+        self.clear_Entry()
+        # Set the total attribute to 0
+        self.total=0
+
+    def pi(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the value of math.pi
+        self.current= math.pi
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def tau(self):
+        # Set the result attribute to False
+        self.result  = False
+        # Set the current attribute to the value of math.tau
+        self.current = math.tau
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def e(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the value of math.e
+        self.current = math.e
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
