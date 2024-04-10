@@ -166,4 +166,50 @@ class Calc():
         # Call the display method with the value of the current attribute
         self.display(self.current)
 
-    
+    def cos(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the cosine of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.cos(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def cosh(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the hyperbolic cosine of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.cosh(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def tan(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the tangent of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.tan(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def tanh(self):
+        # Set the result attribute to False
+        self.result = False
+         # Set the current attribute to the hyperbolic tangent of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.tanh(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def sin(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the hyperbolic sine of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.sin(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def sinh(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the hyperbolic sine of the value displayed in the txtDisplay widget, converted to radians
+        self.current = math.sinh(math.radians(float(txtDisplay.get())))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)  
