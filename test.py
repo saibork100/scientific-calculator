@@ -496,3 +496,26 @@ btnCosh = Button(calc, text="Cosh", # The text on the button is "Cosh"
 				bd=4, # The border width of the button is 4
 				command=added_value.cosh # The command to execute when the button is clicked is the cosh method of the added_value object
 				).grid(row=2, column= 5, pady = 1) # The button is added to the grid at row 2, column 5, with a padding of 1
+
+# Create a button for the hyperbolic tangent function
+btntanh = Button(calc, text="tanh", # The text on the button is "tanh"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.tanh # The command to execute when the button is clicked is the tanh method of the added_value object
+				).grid(row=2, column= 6, pady = 1) # The button is added to the grid at row 2, column 6, with a padding of 1
+
+# Create a button for the hyperbolic sine function
+btnsinh = Button(calc, text="sinh", # The text on the button is "sinh"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.sinh # The command to execute when the button is clicked is the sinh method of the added_value object
+				).grid(row=2, column= 7, pady = 1) # The button is added to the grid at row 2, column 7, with a padding of 1
+
