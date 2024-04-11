@@ -321,3 +321,19 @@ for j in range(2,5):
 		btn[i]["command"]=lambda x=numberpad[i]:added_value.numberEnter(x)
         # Increment the index of the number pad string
 		i+=1
+
+# Create a button for the "Clear" function
+btnClear = Button(calc, text=chr(67),width=6,
+				height=2,bg='powder blue',
+				font=('Helvetica',20,'bold')
+				,bd=4, command=added_value.Clear_Entry
+				).grid(row=1, column= 0, pady = 1)
+
+# Create a button for the "All Clear" function
+btnAllClear = Button(calc, text=chr(67)+chr(69),
+					width=6, height=2,
+					bg='powder blue', 
+					font=('Helvetica',20,'bold'),
+					bd=4,
+					command=added_value.All_Clear_Entry
+					).grid(row=1, column= 1, pady = 1)
