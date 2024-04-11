@@ -323,17 +323,37 @@ for j in range(2,5):
 		i+=1
 
 # Create a button for the "Clear" function
-btnClear = Button(calc, text=chr(67),width=6,
-				height=2,bg='powder blue',
-				font=('Helvetica',20,'bold')
-				,bd=4, command=added_value.Clear_Entry
-				).grid(row=1, column= 0, pady = 1)
+btnClear = Button(calc, text=chr(67), # Use the chr() function to display the character 'C' on the button
+				width=6, height=2, # Set the width and height of the button
+				bg='powder blue', # Set the background color of the button
+				font=('Helvetica',20,'bold'), # Set the font style of the button
+				bd=4, # Set the border width of the button
+				command=added_value.Clear_Entry # Set the command to be executed when the button is clicked
+				).grid(row=1, column= 0, pady = 1) # Add the button to the grid layout manager
 
 # Create a button for the "All Clear" function
-btnAllClear = Button(calc, text=chr(67)+chr(69),
+btnAllClear = Button(calc, text=chr(67)+chr(69), # Use the chr() function to display the characters 'CN' on the button
 					width=6, height=2,
 					bg='powder blue', 
 					font=('Helvetica',20,'bold'),
 					bd=4,
 					command=added_value.All_Clear_Entry
-					).grid(row=1, column= 1, pady = 1)
+					).grid(row=1, column= 1, pady = 1) # Add the button to the grid layout manager
+
+# Create a button for the square root function
+btnsq = Button(calc, text="\u221A", # The Unicode character for the square root symbol
+			width=6, height=2, # The size of the button
+			bg='powder blue', # The background color of the button
+			font=('Helvetica', 20, 'bold'), # The font style of the button
+			bd=4, # The border width of the button
+			command=added_value.squared # The command to execute when the button is clicked
+			).grid(row=1, column= 2, pady = 1) # Add the button to the grid layout manager
+
+# Create a button for the addition function
+btnAdd = Button(calc, text="+", # The text on the button
+				width=6, height=2, # The size of the button
+				bg='powder blue', # The background color of the button
+				font=('Helvetica',20,'bold'), # The font style of the button
+				bd=4, # The border width of the button
+				command=lambda:added_value.operation("add") # The command to execute when the button is clicked
+				).grid(row=1, column= 3, pady = 1) # Add the button to the grid layout manager
