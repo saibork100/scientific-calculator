@@ -519,3 +519,27 @@ btnsinh = Button(calc, text="sinh", # The text on the button is "sinh"
 				command=added_value.sinh # The command to execute when the button is clicked is the sinh method of the added_value object
 				).grid(row=2, column= 7, pady = 1) # The button is added to the grid at row 2, column 7, with a padding of 1
 
+# ROW 3 :
+# Create a button for the natural logarithm function
+btnlog = Button(calc, text="log", # The text on the button is "log"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.log # The command to execute when the button is clicked is the log method of the added_value object
+			).grid(row=3, column= 4, pady = 1) # The button is added to the grid at row 3, column 4, with a padding of 1
+
+# Create a button for the exponential function
+btnExp = Button(calc, text="exp", # The text on the button is "exp"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.exp # The command to execute when the button is clicked is the exp method of the added_value object
+			).grid(row=3, column= 5, pady = 1) # The button is added to the grid at row 3, column 5, with a padding of 1
+
+
