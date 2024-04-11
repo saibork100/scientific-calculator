@@ -5,7 +5,7 @@ import tkinter.messagebox
 
 root = Tk()     # Create a new Tkinter window
 root.title("Scientific Calculator")     # Set the title of the window
-root.comfiguer (background = 'white')   # Set the background color of the window to white
+root.configure(background = 'white')   # Set the background color of the window to white
 root.resizable(width=False, height=False)   # Prevent the window from being resized by the user
 root.geometry("480x568+450+90")     # Set the size and position of the window
 calc =Frame(root)    # Create a new frame widget inside the window
@@ -25,6 +25,8 @@ class Calc():
         self.op=''
         # Initialize the result attribute to False
         self.result=False
+
+        self.angle_mode = "radians"
 
     def numberEnter(self, num):
         # set the result attridute to False
@@ -53,19 +55,16 @@ class Calc():
         self.display(self.current)
 
     def sum_of_total(self):
-        # Set the result attribute to True
-        self.result=True
-        # Convert the current attribute
-        self.current=float(self.current)
-
-        # Check if the check_sum attribute is True
-        if self.check_sum==True:
-            # If it is, call the valid_function method
-            self.valid_function()
+        self.result = True
+        self.current = float(self.current)
+        if self.check_sum == True:
+            if self.op == "divide" and self.current == 0:  # Check for division by zero
+                tkinter.messagebox.showerror("Error", "Cannot divide by zero!")
+                self.clear_all()  # Clear everything
+            else:
+                self.valid_function()
         else:
-            # Otherwise, set the total attribute to the value of the txtDisplay widget, converted to a float
-            self.total=float(txtDisplay.get())
-
+            self.total = float(txtDisplay.get())
     def display(self, value):
         # Delete any existing existing text in the txtDisplay widget
         txtDisplay.delete(0, END)
@@ -120,7 +119,7 @@ class Calc():
         # Set the input_value attribute to True
         self.input_value = True
 
-    def All_claer_Entry(self):
+    def All_Clear_Entry(self):
         # Call the Clear_Entry method
         self.clear_Entry()
         # Set the total attribute to 0
@@ -198,12 +197,18 @@ class Calc():
         # Call the display method with the value of the current attribute
         self.display(self.current)
 
+    def switch_angle_mode(self):
+        if self.angle_mode == "radians":
+            self.angle_mode = "degrees"
+        else:
+            self.angle_mode = "radians"
+
     def sin(self):
-        # Set the result attribute to False
         self.result = False
-        # Set the current attribute to the hyperbolic sine of the value displayed in the txtDisplay widget, converted to radians
-        self.current = math.sin(math.radians(float(txtDisplay.get())))
-        # Call the display method with the value of the current attribute
+        if self.angle_mode == "radians":
+            self.current = math.sin(float(txtDisplay.get()))
+        else:
+            self.current = math.sin(math.radians(float(txtDisplay.get())))
         self.display(self.current)
 
     def sinh(self):
@@ -653,6 +658,11 @@ btnasinh = Button(calc, text="asinh", # The text on the button is "asinh"
 				bd=4, # The border width of the button is 4
 				command=added_value.asinh # The command to execute when the button is clicked is the asinh method of the added_value object
 			).grid(row=5, column= 7, pady = 1) # The button is added to the grid at row 5, column 7, with a padding of 1
+
+btnAngleMode = Button(calc, text="Deg/Rad", width=6, height=2,
+                      bg='powder blue', font=('Helvetica', 20, 'bold'),
+                      bd=4, command=added_value.switch_angle_mode
+                      ).grid(row=5, column=8, pady=1)
 
 # Create a label for the calculator display
 lblDisplay = Label(calc, text = "Scientific Calculator", # The text on the label is "Scientific Calculator"
