@@ -253,4 +253,42 @@ class Calc():
         # Call the display method with the value of the current attribute
         self.display(self.current)                          
 
+    def lgamma(self):
+        self.result = False
+         # Set the current attribute to the natural logarithm of the gamma function of the value displayed in the txtDisplay widget
+        self.current = math.lgamma(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
         
+
+    def degrees(self):
+        # Set the result attribute to False
+        self.result = False
+         # Set the current attribute to the natural logarithm of the gamma function of the value displayed in the txtDisplay widget
+        self.current = math.degrees(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def log2(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the base 2 logarithm of the value displayed in the txtDisplay widget
+        self.current = math.log2(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def log10(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the base 10 logarithm of the value displayed in the txtDisplay widget
+        self.current = math.log10(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def log1p(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the natural logarithm of 1 plus the value displayed in the txtDisplay widget
+        self.current = math.log1p(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
