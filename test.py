@@ -563,3 +563,26 @@ btnE = Button(calc, text="e", # The text on the button is "e"
 				bd=4, # The border width of the button is 4
 				command=added_value.e # The command to execute when the button is clicked is the e method of the added_value object
 			).grid(row=3, column= 7, pady = 1) # The button is added to the grid at row 3, column 7, with a padding of 1
+
+# ROW 4 :
+# Create a button for the common logarithm function
+btnlog10 = Button(calc, text="log10", # The text on the button is "log10"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.log10 # The command to execute when the button is clicked is the log10 method of the added_value object
+			).grid(row=4, column= 4, pady = 1) # The button is added to the grid at row 4, column 4, with a padding of 1
+
+# Create a button for the natural logarithm of 1 plus x function
+btncos = Button(calc, text="log1p", # The text on the button is "log1p"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.log1p # The command to execute when the button is clicked is the log1p method of the added_value object
+			).grid(row=4, column= 5, pady = 1) # The button is added to the grid at row 4, column 5, with a padding of 1
