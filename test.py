@@ -663,3 +663,23 @@ lblDisplay = Label(calc, text = "Scientific Calculator", # The text on the label
 
 # Add the label for the calculator display to the grid layout manager
 lblDisplay.grid(row=0, column= 4, columnspan=4) # The label is added to the grid at row 0, column 4, with a column span of 4
+
+# Define a function to handle the exit button click event
+def iExit():
+	iExit = tkinter.messagebox.askyesno("Scientific Calculator", # The title of the message box is "Scientific Calculator"
+										"Do you want to exit?") # The message in the message box is "Do you want to exit?"
+	if iExit>0: # If the user clicks the "Yes" button
+		root.destroy() # Close the window
+		return
+
+# Define a function to set the window size and position for the scientific calculator mode
+def Scientific():
+	root.resizable(width=False, height=False) # Disable resizing of the window
+	root.geometry("944x568+0+0") # Set the window size and position
+
+# Define a function to set the window size and position for the standard calculator mode
+def Standard():
+	root.resizable(width=False, height=False) # Disable resizing of the window
+	root.geometry("480x568+0+0") # Set the window size and position
+     
+    
