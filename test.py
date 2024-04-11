@@ -608,3 +608,27 @@ btngamma = Button(calc, text="gamma", # The text on the button is "gamma"
 				bd=4, # The border width of the button is 4
 				command=added_value.lgamma # The command to execute when the button is clicked is the lgamma method of the added_value object
 			).grid(row=4, column= 7, pady = 1) # The button is added to the grid at row 4, column 7, with a padding of 1
+
+# ROW 5 :
+# Create a button for the binary logarithm function
+btnlog2 = Button(calc, text="log2", # The text on the button is "log2"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.log2 # The command to execute when the button is clicked is the log2 method of the added_value object
+			).grid(row=5, column= 4, pady = 1) # The button is added to the grid at row 5, column 4, with a padding of 1
+
+# Create a button for the degree conversion function
+btndeg = Button(calc, text="deg", # The text on the button is "deg"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.degrees # The command to execute when the button is clicked is the degrees method of the added_value object
+			).grid(row=5, column= 5, pady = 1) # The button is added to the grid at row 5, column 5, with a padding of 1
+
