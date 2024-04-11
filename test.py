@@ -292,3 +292,32 @@ class Calc():
         self.current = math.log1p(float(txtDisplay.get()))
         # Call the display method with the value of the current attribute
         self.display(self.current)
+
+# Create an instance of the Calc class
+added_value = Calc()
+
+# Create a text entry widget for the calculator display
+txtDisplay = Entry(calc, font=('Helvetica',20,'bold'),
+				bg='black',fg='white',
+				bd=30,width=28,justify=RIGHT)
+txtDisplay.grid(row=0,column=0, columnspan=4, pady=1)
+txtDisplay.insert(0,"0")
+
+# Define a string of numbers for the number pad
+numberpad = "789456123"
+i=0
+# Create a list to store the number pad buttons
+btn = []
+for j in range(2,5):
+	for k in range(3):
+        # Create a button for each number in the number pad
+		btn.append(Button(calc, width=6, height=2,
+						bg='black',fg='white',
+						font=('Helvetica',20,'bold'),
+						bd=4,text=numberpad[i]))
+        # Place the button in the correct position in the grid
+		btn[i].grid(row=j, column= k, pady = 1)
+        # Set the command of the button to call the numberEnter method of the Calc instance
+		btn[i]["command"]=lambda x=numberpad[i]:added_value.numberEnter(x)
+        # Increment the index of the number pad string
+		i+=1
