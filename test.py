@@ -387,3 +387,44 @@ btnDiv = Button(calc, text="/", # The text on the button is "/"
 				bd=4, # The border width of the button is 4
 				command=lambda:added_value.operation("divide") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "divide"
 				).grid(row=4, column= 3, pady = 1) # The button is added to the grid at row 4, column 3, with a padding of 1
+
+# Create a button for the number 0
+btnZero = Button(calc, text="0", # The text on the button is "0"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.numberEnter(0) # The command to execute when the button is clicked is a lambda function that calls the numberEnter method of the added_value object with the argument 0
+				).grid(row=5, column= 0, pady = 1) # The button is added to the grid at row 5, column 0, with a padding of 1
+
+# Create a button for the decimal point
+btnDot = Button(calc, text=".", # The text on the button is "."
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='powder blue', # The background color of the button is powder blue
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.numberEnter(".") # The command to execute when the button is clicked is a lambda function that calls the numberEnter method of the added_value object with the argument "."
+				).grid(row=5, column= 1, pady = 1) # The button is added to the grid at row 5, column 1, with a padding of 1
+
+# Create a button for the mathematical operation "plus or minus"
+btnPM = Button(calc, text=chr(177), # The text on the button is the unicode character for "plus or minus"
+			height=2, # The height of the button is 2
+			width=6,  # The width of the button is 6
+			bg='powder blue', # The background color of the button is powder blue
+			font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+			bd=4, # The border width of the button is 4
+			command=added_value.mathPM # The command to execute when the button is clicked is the mathPM method of the added_value object
+			).grid(row=5, column= 2, pady = 1) # The button is added to the grid at row 5, column 2, with a padding of 1
+
+# Create a button for calculating the sum of the current and total values
+btnEquals = Button(calc, text="=", # The text on the button is "="
+				height=2, # The height of the button is 2
+				width=6, # The width of the button is 6
+				bg='powder blue', # The background color of the button is powder blue
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.sum_of_total # The command to execute when the button is clicked is the sum_of_total method of the added_value object
+				).grid(row=5, column= 3, pady = 1) # The button is added to the grid at row 5, column 3, with a padding of 1
