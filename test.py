@@ -357,3 +357,33 @@ btnAdd = Button(calc, text="+", # The text on the button
 				bd=4, # The border width of the button
 				command=lambda:added_value.operation("add") # The command to execute when the button is clicked
 				).grid(row=1, column= 3, pady = 1) # Add the button to the grid layout manager
+
+# Create a button for the subtraction operation
+btnSub = Button(calc, text="-", # The text on the button is "-"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='powder blue', # The background color of the button is powder blue
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.operation("sub") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "sub"
+				).grid(row=2, column= 3, pady = 1) # The button is added to the grid at row 2, column 3, with a padding of 1
+
+# Create a button for the multiplication operation
+btnMul = Button(calc, text="x", # The text on the button is "x"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='powder blue', # The background color of the button is powder blue
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.operation("multi") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "multi"
+				).grid(row=3, column= 3, pady = 1) # The button is added to the grid at row 3, column 3, with a padding of 1
+
+# Create a button for the division operation
+btnDiv = Button(calc, text="/", # The text on the button is "/"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='powder blue', # The background color of the button is powder blue
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.operation("divide") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "divide"
+				).grid(row=4, column= 3, pady = 1) # The button is added to the grid at row 4, column 3, with a padding of 1
