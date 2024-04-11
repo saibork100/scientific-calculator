@@ -682,4 +682,31 @@ def Standard():
 	root.resizable(width=False, height=False) # Disable resizing of the window
 	root.geometry("480x568+0+0") # Set the window size and position
      
+# Create a menu bar for the calculator application
+menubar = Menu(calc)
+
+# ManuBar 1 :
+# Create a file menu for the menu bar
+filemenu = Menu(menubar, tearoff = 0)
+menubar.add_cascade(label = 'File', menu = filemenu)
+filemenu.add_command(label = "Standard", command = Standard) # Add a command to the file menu to switch to the standard calculator mode
+filemenu.add_command(label = "Scientific", command = Scientific) # Add a command to the file menu to switch to the scientific calculator mode
+filemenu.add_separator() # Add a separator to the file menu
+filemenu.add_command(label = "Exit", command = iExit) # Add a command to the file menu to exit the application
+
+# ManuBar 2 :
+# Create an edit menu for the menu bar
+editmenu = Menu(menubar, tearoff = 0)
+menubar.add_cascade(label = 'Edit', menu = editmenu)
+editmenu.add_command(label = "Cut") # Add a command to the edit menu to cut text
+editmenu.add_command(label = "Copy") # Add a command to the edit menu to copy text
+editmenu.add_separator() # Add a separator to the edit menu
+editmenu.add_command(label = "Paste") # Add a command to the edit menu to paste text
+
+# Add the menu bar to the calculator window
+root.config(menu=menubar)
+
+# Start the calculator application
+root.mainloop()
+     
     
