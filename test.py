@@ -229,3 +229,28 @@ class Calc():
         self.current = math.exp(float(txtDisplay.get()))
         # Call the display method with the value of the current attribute
         self.display(self.current)
+
+    def acosh(self):
+        # Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the inverse hyperbolic cosine of the value displayed in the txtDisplay widget
+        self.current = math.acosh(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)
+
+    def asinh(self):
+        # Set the result attribute to False
+        self.result = False
+         # Set the current attribute to the inverse hyperbolic sine of the value displayed in the txtDisplay widget
+        self.current = math.asinh(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)    
+
+    def expm1(self):# Set the result attribute to False
+        self.result = False
+        # Set the current attribute to the exponential of the value displayed in the txtDisplay widget, minus 1
+        self.current = math.expm1(float(txtDisplay.get()))
+        # Call the display method with the value of the current attribute
+        self.display(self.current)                          
+
+        
