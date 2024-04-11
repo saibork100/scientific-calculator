@@ -632,3 +632,34 @@ btndeg = Button(calc, text="deg", # The text on the button is "deg"
 				command=added_value.degrees # The command to execute when the button is clicked is the degrees method of the added_value object
 			).grid(row=5, column= 5, pady = 1) # The button is added to the grid at row 5, column 5, with a padding of 1
 
+# Create a button for the inverse hyperbolic cosine function
+btnacosh = Button(calc, text="acosh", # The text on the button is "acosh"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.acosh # The command to execute when the button is clicked is the acosh method of the added_value object
+			).grid(row=5, column= 6, pady = 1) # The button is added to the grid at row 5, column 6, with a padding of 1
+
+# Create a button for the inverse hyperbolic sine function
+btnasinh = Button(calc, text="asinh", # The text on the button is "asinh"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.asinh # The command to execute when the button is clicked is the asinh method of the added_value object
+			).grid(row=5, column= 7, pady = 1) # The button is added to the grid at row 5, column 7, with a padding of 1
+
+# Create a label for the calculator display
+lblDisplay = Label(calc, text = "Scientific Calculator", # The text on the label is "Scientific Calculator"
+				font=('Helvetica',30,'bold'), # The font of the label is Helvetica, bold, and size 30
+				bg='black', # The background color of the label is black
+				fg='white', # The foreground color of the label is white
+				justify=CENTER) # The text on the label is centered
+
+# Add the label for the calculator display to the grid layout manager
+lblDisplay.grid(row=0, column= 4, columnspan=4) # The label is added to the grid at row 0, column 4, with a column span of 4
