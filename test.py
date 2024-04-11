@@ -428,3 +428,26 @@ btnEquals = Button(calc, text="=", # The text on the button is "="
 				bd=4, # The border width of the button is 4
 				command=added_value.sum_of_total # The command to execute when the button is clicked is the sum_of_total method of the added_value object
 				).grid(row=5, column= 3, pady = 1) # The button is added to the grid at row 5, column 3, with a padding of 1
+
+# ROW 1 :
+# Create a button for the mathematical constant pi
+btnPi = Button(calc, text="pi", # The text on the button is "pi"
+			width=6, # The width of the button is 6
+			height=2, # The height of the button is 2
+			bg='black', # The background color of the button is black
+			fg='white', # The foreground color of the button is white
+			font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+			bd=4, # The border width of the button is 4
+			command=added_value.pi # The command to execute when the button is clicked is the pi method of the added_value object
+			).grid(row=1, column= 4, pady = 1) # The button is added to the grid at row 1, column 4, with a padding of 1
+
+# Create a button for the cosine function
+btnCos = Button(calc, text="Cos", # The text on the button is "Cos"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='black', # The background color of the button is black
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 2
+				bd=4,# The border width of the button is 4
+                command=added_value.cos # The command to execute when the button is clicked is the cos method of the added_value object
+			).grid(row=1, column= 5, pady = 1)# The button is added to the grid at row 1, column 4, with a padding of 1
