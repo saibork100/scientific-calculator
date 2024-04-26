@@ -31,7 +31,7 @@ pip install tk
 ## Instructions to Run the Program:
 1. Ensure you have Python installed on your system.
 2. If Tkinter is not installed, install it using the provided pip command.
-3. Copy the provided code into a Python file (e.g., `calculator.py`).
+3. Copy the provided code into a Python file (e.g., `test.py`).
 4. Run the Python file using the Python interpreter:
 
 test.py
