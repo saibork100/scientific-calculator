@@ -34,6 +34,6 @@ pip install tk
 3. Copy the provided code into a Python file (e.g., `calculator.py`).
 4. Run the Python file using the Python interpreter:
 
-python calculator.py
+test.py
 
 5. The calculator window will appear, allowing you to perform mathematical calculations using the provided interface.
