@@ -5,7 +5,7 @@ import tkinter.messagebox
 
 root = Tk()     # Create a new Tkinter window
 root.title("Scientific Calculator")     # Set the title of the window
-root.configure(background = 'white')   # Set the background color of the window to white
+root.configure(background = 'green')   # Set the background color of the window to green
 root.resizable(width=False, height=False)   # Prevent the window from being resized by the user
 root.geometry("480x568+450+90")     # Set the size and position of the window
 calc =Frame(root)    # Create a new frame widget inside the window
