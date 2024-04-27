@@ -1,4 +1,4 @@
-# scientific-calculator
+# Scientific Calculator App
 
 <img src="/calculator.png">
 
