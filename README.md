@@ -36,6 +36,8 @@ pip install tkinter
 3. Copy the provided code into a Python file (e.g., `calculator.py`).
 4. Run the Python file using the Python interpreter:
 
-calculator.py
+```bash
+python calculator.py
+```
 
 5. The calculator window will appear, allowing you to perform mathematical calculations using the provided interface.
