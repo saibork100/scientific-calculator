@@ -27,7 +27,7 @@ Users can launch the calculator and interact with it using the graphical interfa
 Since Tkinter is a standard Python library, no additional installation steps are required for most Python installations. However, if Tkinter is not installed or if you encounter any issues, you can install it using pip:
 
 ```bash
-pip install tk
+pip install tkinter
 ```
 
 ## Instructions to Run the Program:
