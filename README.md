@@ -1,6 +1,6 @@
 # scientific-calculator
 
-
+<img src="/calculator.png">
 
 ## Student Information:
 
