@@ -33,9 +33,9 @@ pip install tkinter
 ## Instructions to Run the Program:
 1. Ensure you have Python installed on your system.
 2. If Tkinter is not installed, install it using the provided pip command.
-3. Copy the provided code into a Python file (e.g., `test.py`).
+3. Copy the provided code into a Python file (e.g., `calculator.py`).
 4. Run the Python file using the Python interpreter:
 
-test.py
+calculator.py
 
 5. The calculator window will appear, allowing you to perform mathematical calculations using the provided interface.
