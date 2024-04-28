@@ -1,6 +1,7 @@
 # Scientific Calculator App
 
-<img src="/calculator.png">
+- <img src="/image.png">
+- <img src="/image1.png">
 
 ## Student Information:
 
@@ -8,6 +9,7 @@
 - Student ID: P434705
 - Course: IY499
 - Assignment Title: scientific calculator
+- [GitHub-link] (https://github.com/saibork100/scientific-calculator.git)
 
 ## Declaration of own work in this assignment:
 I confirm that this assignment is my own work. Where I have referred to academic sources, I have provided in-text citations and included the sources in the final reference list.

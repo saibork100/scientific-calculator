@@ -5,7 +5,7 @@ import tkinter.messagebox
 
 root = Tk()     # Create a new Tkinter window
 root.title("Scientific Calculator")     # Set the title of the window
-root.configure(background = 'green')   # Set the background color of the window to green
+root.configure(background = 'navajo white')   # Set the background color of the window to navajo white
 root.resizable(width=False, height=False)   # Prevent the window from being resized by the user
 root.geometry("480x568+450+90")     # Set the size and position of the window
 calc =Frame(root)    # Create a new frame widget inside the window
@@ -303,7 +303,7 @@ added_value = Calc()
 
 # Create a text entry widget for the calculator display
 txtDisplay = Entry(calc, font=('Helvetica',20,'bold'),
-				bg='black',fg='white',
+				bg='gray25',fg='snow',
 				bd=30,width=28,justify=RIGHT)
 txtDisplay.grid(row=0,column=0, columnspan=4, pady=1)
 txtDisplay.insert(0,"0")
@@ -317,7 +317,7 @@ for j in range(2,5):
 	for k in range(3):
         # Create a button for each number in the number pad
 		btn.append(Button(calc, width=6, height=2,
-						bg='black',fg='white',
+						bg='navy',fg='white',
 						font=('Helvetica',20,'bold'),
 						bd=4,text=numberpad[i]))
         # Place the button in the correct position in the grid
@@ -330,7 +330,7 @@ for j in range(2,5):
 # Create a button for the "Clear" function
 btnClear = Button(calc, text=chr(67), # Use the chr() function to display the character 'C' on the button
 				width=6, height=2, # Set the width and height of the button
-				bg='powder blue', # Set the background color of the button
+				bg='brown4', # Set the background color of the button
 				font=('Helvetica',20,'bold'), # Set the font style of the button
 				bd=4, # Set the border width of the button
 				command=added_value.Clear_Entry # Set the command to be executed when the button is clicked
@@ -397,7 +397,7 @@ btnDiv = Button(calc, text="/", # The text on the button is "/"
 btnZero = Button(calc, text="0", # The text on the button is "0"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -439,7 +439,7 @@ btnEquals = Button(calc, text="=", # The text on the button is "="
 btnPi = Button(calc, text="pi", # The text on the button is "pi"
 			width=6, # The width of the button is 6
 			height=2, # The height of the button is 2
-			bg='black', # The background color of the button is black
+			bg='navy', # The background color of the button is navy
 			fg='white', # The foreground color of the button is white
 			font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 			bd=4, # The border width of the button is 4
@@ -447,10 +447,10 @@ btnPi = Button(calc, text="pi", # The text on the button is "pi"
 			).grid(row=1, column= 4, pady = 1) # The button is added to the grid at row 1, column 4, with a padding of 1
 
 # Create a button for the cosine function
-btnCos = Button(calc, text="Cos", # The text on the button is "Cos"
+btnCos = Button(calc, text="cos", # The text on the button is "cos"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 2
 				bd=4,# The border width of the button is 4
@@ -461,30 +461,30 @@ btnCos = Button(calc, text="Cos", # The text on the button is "Cos"
 btntan = Button(calc, text="tan", # The text on the button is "tan"
 			width=6, # The width of the button is 6
 			height=2, # The height of the button is 2
-			bg='black', # The background color of the button is black
+			bg='navy', # The background color of the button is navy
 			fg='white', # The foreground color of the button is white
 			font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 			bd=4, # The border width of the button is 4
 			command=added_value.tan # The command to execute when the button is clicked is the tan method of the added_value object
-			).grid(row=1, column= 6, pady = 1) # The button is added to the grid at row 1, column 6, with a padding of 1
+			).grid(row=1, column= 7, pady = 1) # The button is added to the grid at row 1, column 6, with a padding of 1
 
 # Create a button for the sine function
 btnsin = Button(calc, text="sin", # The text on the button is "sin"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.sin # The command to execute when the button is clicked is the sin method of the added_value object
-				).grid(row=1, column= 7, pady = 1) # The button is added to the grid at row 1, column 7, with a padding of 1
+				).grid(row=1, column= 6, pady = 1) # The button is added to the grid at row 1, column 7, with a padding of 1
 
 # ROW 2 :
 # Create a button for the mathematical constant 2pi
 btn2Pi = Button(calc, text="2pi", # The text on the button is "2pi"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -492,10 +492,10 @@ btn2Pi = Button(calc, text="2pi", # The text on the button is "2pi"
 			).grid(row=2, column= 4, pady = 1) # The button is added to the grid at row 2, column 4, with a padding of 1
 
 # Create a button for the hyperbolic cosine function
-btnCosh = Button(calc, text="Cosh", # The text on the button is "Cosh"
+btnCosh = Button(calc, text="cosh", # The text on the button is "cosh"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -506,30 +506,30 @@ btnCosh = Button(calc, text="Cosh", # The text on the button is "Cosh"
 btntanh = Button(calc, text="tanh", # The text on the button is "tanh"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.tanh # The command to execute when the button is clicked is the tanh method of the added_value object
-				).grid(row=2, column= 6, pady = 1) # The button is added to the grid at row 2, column 6, with a padding of 1
+				).grid(row=2, column= 7, pady = 1) # The button is added to the grid at row 2, column 6, with a padding of 1
 
 # Create a button for the hyperbolic sine function
 btnsinh = Button(calc, text="sinh", # The text on the button is "sinh"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.sinh # The command to execute when the button is clicked is the sinh method of the added_value object
-				).grid(row=2, column= 7, pady = 1) # The button is added to the grid at row 2, column 7, with a padding of 1
+				).grid(row=2, column= 6, pady = 1) # The button is added to the grid at row 2, column 7, with a padding of 1
 
 # ROW 3 :
 # Create a button for the natural logarithm function
 btnlog = Button(calc, text="log", # The text on the button is "log"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -540,41 +540,43 @@ btnlog = Button(calc, text="log", # The text on the button is "log"
 btnExp = Button(calc, text="exp", # The text on the button is "exp"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.exp # The command to execute when the button is clicked is the exp method of the added_value object
 			).grid(row=3, column= 5, pady = 1) # The button is added to the grid at row 3, column 5, with a padding of 1
 
-# Create a button for the modulus operation
-btnMod = Button(calc, text="Mod", # The text on the button is "Mod"
-				width=6, # The width of the button is 6
-				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
-				fg='white', # The foreground color of the button is white
-				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
-				bd=4, # The border width of the button is 4
-				command=lambda:added_value.operation("mod") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "mod"
-			).grid(row=3, column= 6, pady = 1) # The button is added to the grid at row 3, column 6, with a padding of 1
 
 # Create a button for the mathematical constant e
 btnE = Button(calc, text="e", # The text on the button is "e"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.e # The command to execute when the button is clicked is the e method of the added_value object
-			).grid(row=3, column= 7, pady = 1) # The button is added to the grid at row 3, column 7, with a padding of 1
+			).grid(row=3, column= 6, pady = 1) # The button is added to the grid at row 3, column 7, with a padding of 1
+
+# Create a button for the modulus operation
+btnMod = Button(calc, text="Mod", # The text on the button is "Mod"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='navy', # The background color of the button is navy
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=lambda:added_value.operation("mod") # The command to execute when the button is clicked is a lambda function that calls the operation method of the added_value object with the argument "mod"
+			).grid(row=3, column= 7, pady = 1) # The button is added to the grid at row 3, column 6, with a padding of 1
+
 
 # ROW 4 :
 # Create a button for the common logarithm function
 btnlog10 = Button(calc, text="log10", # The text on the button is "log10"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -585,7 +587,7 @@ btnlog10 = Button(calc, text="log10", # The text on the button is "log10"
 btncos = Button(calc, text="log1p", # The text on the button is "log1p"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -596,7 +598,7 @@ btncos = Button(calc, text="log1p", # The text on the button is "log1p"
 btnexpm1 = Button(calc, text="expm1", # The text on the button is "expm1"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -607,7 +609,7 @@ btnexpm1 = Button(calc, text="expm1", # The text on the button is "expm1"
 btngamma = Button(calc, text="gamma", # The text on the button is "gamma"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -619,7 +621,7 @@ btngamma = Button(calc, text="gamma", # The text on the button is "gamma"
 btnlog2 = Button(calc, text="log2", # The text on the button is "log2"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
@@ -630,34 +632,35 @@ btnlog2 = Button(calc, text="log2", # The text on the button is "log2"
 btndeg = Button(calc, text="deg", # The text on the button is "deg"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.degrees # The command to execute when the button is clicked is the degrees method of the added_value object
 			).grid(row=5, column= 5, pady = 1) # The button is added to the grid at row 5, column 5, with a padding of 1
 
+# Create a button for the inverse hyperbolic sine function
+btnasinh = Button(calc, text="asinh", # The text on the button is "asinh"
+				width=6, # The width of the button is 6
+				height=2, # The height of the button is 2
+				bg='navy', # The background color of the button is navy
+				fg='white', # The foreground color of the button is white
+				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
+				bd=4, # The border width of the button is 4
+				command=added_value.asinh # The command to execute when the button is clicked is the asinh method of the added_value object
+			).grid(row=5, column= 7, pady = 1) # The button is added to the grid at row 5, column 7, with a padding of 1
+
 # Create a button for the inverse hyperbolic cosine function
 btnacosh = Button(calc, text="acosh", # The text on the button is "acosh"
 				width=6, # The width of the button is 6
 				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
+				bg='navy', # The background color of the button is navy
 				fg='white', # The foreground color of the button is white
 				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
 				bd=4, # The border width of the button is 4
 				command=added_value.acosh # The command to execute when the button is clicked is the acosh method of the added_value object
 			).grid(row=5, column= 6, pady = 1) # The button is added to the grid at row 5, column 6, with a padding of 1
 
-# Create a button for the inverse hyperbolic sine function
-btnasinh = Button(calc, text="asinh", # The text on the button is "asinh"
-				width=6, # The width of the button is 6
-				height=2, # The height of the button is 2
-				bg='black', # The background color of the button is black
-				fg='white', # The foreground color of the button is white
-				font=('Helvetica',20,'bold'), # The font of the button is Helvetica, bold, and size 20
-				bd=4, # The border width of the button is 4
-				command=added_value.asinh # The command to execute when the button is clicked is the asinh method of the added_value object
-			).grid(row=5, column= 7, pady = 1) # The button is added to the grid at row 5, column 7, with a padding of 1
 
 btnAngleMode = Button(calc, text="Deg/Rad", width=6, height=2,
                       bg='powder blue', font=('Helvetica', 20, 'bold'),
@@ -667,8 +670,7 @@ btnAngleMode = Button(calc, text="Deg/Rad", width=6, height=2,
 # Create a label for the calculator display
 lblDisplay = Label(calc, text = "Scientific Calculator", # The text on the label is "Scientific Calculator"
 				font=('Helvetica',30,'bold'), # The font of the label is Helvetica, bold, and size 30
-				bg='black', # The background color of the label is black
-				fg='white', # The foreground color of the label is white
+				fg='black', # The foreground color of the label is white
 				justify=CENTER) # The text on the label is centered
 
 # Add the label for the calculator display to the grid layout manager
@@ -695,23 +697,14 @@ def Standard():
 # Create a menu bar for the calculator application
 menubar = Menu(calc)
 
-# ManuBar 1 :
+
 # Create a file menu for the menu bar
-filemenu = Menu(menubar, tearoff = 0)
-menubar.add_cascade(label = 'File', menu = filemenu)
+filemenu = Menu(menubar, tearoff = 0, background = 'mint cream'  )
+menubar.add_cascade(label = 'Type', menu = filemenu)
 filemenu.add_command(label = "Standard", command = Standard) # Add a command to the file menu to switch to the standard calculator mode
 filemenu.add_command(label = "Scientific", command = Scientific) # Add a command to the file menu to switch to the scientific calculator mode
 filemenu.add_separator() # Add a separator to the file menu
 filemenu.add_command(label = "Exit", command = iExit) # Add a command to the file menu to exit the application
-
-# ManuBar 2 :
-# Create an edit menu for the menu bar
-editmenu = Menu(menubar, tearoff = 0)
-menubar.add_cascade(label = 'Edit', menu = editmenu)
-editmenu.add_command(label = "Cut") # Add a command to the edit menu to cut text
-editmenu.add_command(label = "Copy") # Add a command to the edit menu to copy text
-editmenu.add_separator() # Add a separator to the edit menu
-editmenu.add_command(label = "Paste") # Add a command to the edit menu to paste text
 
 # Add the menu bar to the calculator window
 root.config(menu=menubar)
