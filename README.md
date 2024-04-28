@@ -1,7 +1,7 @@
 # Scientific Calculator App
 
-- <img src="/image.png">
-- <img src="/image1.png">
+<img src="/image.png">
+<img src="/image1.png">
 
 ## Student Information:
 
